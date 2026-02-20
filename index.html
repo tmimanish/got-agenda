@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gurgaon Orators Toastmasters Club - Meeting #499 Agenda</title>
+    <title>Gurgaon Orators Toastmasters Club - Meeting #500 Agenda</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -337,14 +337,30 @@
 
             .header h1 {
                 font-size: 1.8rem;
+                line-height: 1.3;
             }
 
             .header h2 {
                 font-size: 1.3rem;
+                line-height: 1.4;
             }
 
             .info-cards {
                 grid-template-columns: 1fr;
+                padding: 20px;
+                gap: 15px;
+            }
+
+            .info-card {
+                padding: 20px;
+            }
+
+            .info-card-value {
+                font-size: 1.1rem;
+                line-height: 1.4;
+            }
+
+            .venue-card {
                 padding: 20px;
             }
 
@@ -354,14 +370,16 @@
 
             .theme-section h3 {
                 font-size: 1.4rem;
+                line-height: 1.4;
             }
 
             .theme-section h4 {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
+                line-height: 1.5;
             }
 
             .content {
-                padding: 20px;
+                padding: 20px 15px;
             }
 
             .agenda-item {
@@ -370,39 +388,62 @@
 
             .agenda-header {
                 flex-direction: column;
-                gap: 15px;
+                gap: 12px;
                 align-items: flex-start;
-                padding: 20px;
+                padding: 18px 15px;
             }
 
             .agenda-title {
-                font-size: 1.2rem;
+                font-size: 1.15rem;
+                line-height: 1.4;
+                word-wrap: break-word;
+                width: 100%;
+            }
+
+            .agenda-title-icon {
+                font-size: 1.3rem;
             }
 
             .agenda-time {
                 align-self: flex-start;
                 font-size: 0.85rem;
-                padding: 6px 15px;
+                padding: 6px 14px;
+                white-space: normal;
+                line-height: 1.4;
             }
 
             .agenda-body {
-                padding: 0 20px 20px 20px;
+                padding: 0 15px 18px 15px;
+            }
+
+            .description {
+                font-size: 0.95rem;
+                line-height: 1.6;
             }
 
             .speech-details {
                 grid-template-columns: 1fr;
+                gap: 10px;
             }
 
             .speech-card {
-                padding: 20px;
+                padding: 18px 15px;
             }
 
             .speech-title {
-                font-size: 1.1rem;
+                font-size: 1.05rem;
+                line-height: 1.4;
+                word-wrap: break-word;
             }
 
             .speech-subtitle {
-                font-size: 1rem;
+                font-size: 0.95rem;
+                line-height: 1.4;
+            }
+
+            .speech-detail {
+                font-size: 0.9rem;
+                line-height: 1.5;
             }
 
             /* Critical fixes for Evaluation section */
@@ -410,7 +451,21 @@
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 10px;
-                padding: 15px;
+                padding: 14px;
+            }
+
+            .role-name {
+                font-size: 0.9rem;
+                word-wrap: break-word;
+                width: 100%;
+                line-height: 1.4;
+            }
+
+            .person-name {
+                font-size: 1rem;
+                word-wrap: break-word;
+                width: 100%;
+                line-height: 1.4;
             }
 
             .evaluator-list {
@@ -420,23 +475,32 @@
             .evaluator-item {
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 10px;
-                padding: 15px;
+                gap: 8px;
+                padding: 14px;
+                margin-bottom: 10px;
             }
 
             .evaluator-role {
-                font-size: 0.95rem;
+                font-size: 0.9rem;
                 word-wrap: break-word;
+                word-break: break-word;
                 width: 100%;
+                line-height: 1.5;
             }
 
             .evaluator-name {
                 font-size: 1rem;
+                word-wrap: break-word;
+                word-break: break-word;
+                width: 100%;
+                line-height: 1.4;
             }
 
             .time-badge {
                 margin-left: 0;
-                margin-top: 5px;
+                margin-top: 4px;
+                font-size: 0.8rem;
+                padding: 4px 12px;
             }
 
             .tag-reports {
@@ -445,18 +509,16 @@
             }
 
             .tag-reports-title {
-                font-size: 1rem;
-                margin-bottom: 10px;
-            }
-
-            .person-name {
-                font-size: 1rem;
+                font-size: 0.95rem;
+                margin-bottom: 12px;
+                font-weight: 700;
             }
 
             .total-duration {
-                margin: 20px;
-                padding: 20px;
-                font-size: 1.4rem;
+                margin: 20px 15px;
+                padding: 18px;
+                font-size: 1.3rem;
+                line-height: 1.4;
             }
 
             .footer {
@@ -464,15 +526,63 @@
             }
 
             .footer h3 {
-                font-size: 1.6rem;
+                font-size: 1.5rem;
+                line-height: 1.4;
             }
 
             .footer p {
-                font-size: 1rem;
+                font-size: 0.95rem;
+                line-height: 1.7;
             }
 
             .footer-tagline {
+                font-size: 1.05rem;
+                line-height: 1.5;
+            }
+        }
+
+        /* Additional mobile optimization for very small screens */
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .header h2 {
                 font-size: 1.1rem;
+            }
+
+            .info-card-value {
+                font-size: 1rem;
+            }
+
+            .theme-section h3 {
+                font-size: 1.2rem;
+            }
+
+            .theme-section h4 {
+                font-size: 1rem;
+            }
+
+            .agenda-title {
+                font-size: 1.05rem;
+            }
+
+            .agenda-time {
+                font-size: 0.8rem;
+            }
+
+            .evaluator-role,
+            .role-name {
+                font-size: 0.85rem;
+            }
+
+            .evaluator-name,
+            .person-name {
+                font-size: 0.95rem;
+            }
+
+            .total-duration {
+                font-size: 1.15rem;
             }
         }
     </style>
@@ -482,7 +592,7 @@
         <!-- Header -->
         <div class="header">
             <h1>Gurgaon Orators Toastmasters Club</h1>
-            <h2>Meeting #499 Agenda</h2>
+            <h2>Meeting #500 Agenda</h2>
         </div>
 
         <!-- Info Cards -->
@@ -491,13 +601,13 @@
                 <div class="info-card-label">
                     📅 DATE
                 </div>
-                <div class="info-card-value">Saturday, February 14, 2026</div>
+                <div class="info-card-value">Friday, February 21, 2026</div>
             </div>
             <div class="info-card">
                 <div class="info-card-label">
                     🕐 TIME
                 </div>
-                <div class="info-card-value">4:45 PM – 7:00 PM</div>
+                <div class="info-card-value">4:45 PM – 8:00 PM</div>
             </div>
             <div class="info-card">
                 <div class="info-card-label">
@@ -515,9 +625,9 @@
 
         <!-- Theme Section -->
         <div class="theme-section">
-            <h3>Theme of the Day: Love beyond Roses</h3>
-            <h4>Word of the Day: Reverence</h4>
-            <h4>Phrase of the Day: Apple of One's Eye</h4>
+            <h3>Theme of the Day: 10 Years of GOT</h3>
+            <h4>Word of the Day: Unstuck</h4>
+            <h4>Phrase of the Day: Zoom Out</h4>
         </div>
 
         <!-- Content -->
@@ -561,14 +671,14 @@
                         <span class="agenda-title-icon">👔</span>
                         Presiding Officer's Address
                     </div>
-                    <div class="agenda-time">5:05 PM - 5:15 PM (10 mins)</div>
+                    <div class="agenda-time">5:05 PM - 5:25 PM (20 mins)</div>
                 </div>
                 <div class="agenda-body">
                     <div class="role-assignment">
                         <span class="role-name">Presiding Officer</span>
-                        <span class="person-name">Manish Dembla</span>
+                        <span class="person-name">DTM Manish Dembla</span>
                     </div>
-                    <p class="description">Welcome address & club updates.</p>
+                    <p class="description">Welcome Address, Guest Introduction, Charter Member acknowledgment and speeches and District Officers' Acknowledgment</p>
                 </div>
             </div>
 
@@ -579,31 +689,48 @@
                         <span class="agenda-title-icon">🎤</span>
                         Toastmaster of the Day (TMOD)
                     </div>
-                    <div class="agenda-time">5:15 PM - 5:20 PM (5 mins)</div>
+                    <div class="agenda-time">5:25 PM - 5:30 PM (5 mins)</div>
                 </div>
                 <div class="agenda-body">
                     <div class="role-assignment">
                         <span class="role-name">TMOD</span>
-                        <span class="person-name">Nayanshi Khurana</span>
+                        <span class="person-name">DTM Ankur Yadav</span>
                     </div>
-                    <p class="description"><strong>Theme Introduction:</strong> Love beyond Roses</p>
-                    <p class="description">TMOD introduces GE Vebhav Bhandari</p>
+                    <p class="description"><strong>Theme Introduction:</strong> 10 Years of GOT</p>
+                    <p class="description">TMOD introduces Keynote Speaker #1 - DTM Shwetank Sharma</p>
                 </div>
             </div>
 
-            <!-- General Evaluator -->
+            <!-- Keynote Speech 1 -->
+            <div class="agenda-item red-border">
+                <div class="agenda-header">
+                    <div class="agenda-title">
+                        <span class="agenda-title-icon">🎙️</span>
+                        Keynote Speech
+                    </div>
+                    <div class="agenda-time">5:30 PM - 5:40 PM (10 mins)</div>
+                </div>
+                <div class="agenda-body">
+                    <div class="role-assignment">
+                        <span class="role-name">Keynote Speaker</span>
+                        <span class="person-name">DTM Shwetank Sharma</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- General Evaluator and TAG Team Introduction -->
             <div class="agenda-item blue-border">
                 <div class="agenda-header">
                     <div class="agenda-title">
                         <span class="agenda-title-icon">📋</span>
-                        General Evaluator
+                        General Evaluator and TAG Team Introduction
                     </div>
-                    <div class="agenda-time">5:20 PM - 5:28 PM (8 mins)</div>
+                    <div class="agenda-time">5:40 PM - 5:50 PM (10 mins)</div>
                 </div>
                 <div class="agenda-body">
                     <div class="role-assignment">
                         <span class="role-name">General Evaluator</span>
-                        <span class="person-name">Vebhav Bhandari</span>
+                        <span class="person-name">DTM Abhijit Roy</span>
                     </div>
                     <p class="description">Explain Evaluation Section & Intro of TAG</p>
                 </div>
@@ -616,56 +743,22 @@
                         <span class="agenda-title-icon">📖</span>
                         Prepared Speeches Session
                     </div>
-                    <div class="agenda-time">5:28 PM - 6:04 PM (36 mins)</div>
+                    <div class="agenda-time">5:50 PM - 6:10 PM (20 mins)</div>
                 </div>
                 <div class="agenda-body">
-                    <p class="description" style="font-style: italic; margin-bottom: 20px;">Ice Breaker: 4–6 minutes. Prepared Speeches: 5–7 minutes.</p>
+                    <p class="description" style="font-style: italic; margin-bottom: 20px;">Prepared Speeches: 5–7 minutes.</p>
                     
                     <div class="speech-card">
-                        <div class="speech-title">Ice Breaker – Rohan Malik</div>
-                        <div class="speech-subtitle">"ICE BREAKER SPEECH"</div>
+                        <div class="speech-title">Prepared Speaker 1 – Priyanka Mishra</div>
                         <div class="speech-details">
-                            <div class="speech-detail"><strong>Pathway:</strong> Presentation Mastery</div>
-                            <div class="speech-detail"><strong>Level/Project:</strong> Level 1 - Project 1</div>
-                            <div class="speech-detail"><strong>Project:</strong> Icebreaker</div>
-                            <div class="speech-detail"><strong>Duration:</strong> 4-6 mins</div>
-                            <div class="speech-detail"><strong>Evaluator:</strong> Manish Dembla</div>
+                            <div class="speech-detail"><strong>Evaluator:</strong> Arjunnath Das</div>
                         </div>
                     </div>
 
                     <div class="speech-card">
-                        <div class="speech-title">Prepared Speaker 2 – Shalu Raizada Bhattacharya</div>
-                        <div class="speech-subtitle">"TURNING A PAGE"</div>
+                        <div class="speech-title">Prepared Speaker 2 – DTM Rupinder Singh</div>
                         <div class="speech-details">
-                            <div class="speech-detail"><strong>Pathway:</strong> Engaging Humour</div>
-                            <div class="speech-detail"><strong>Level/Project:</strong> Level 2 - Project 2</div>
-                            <div class="speech-detail"><strong>Project:</strong> Connect with Audience</div>
-                            <div class="speech-detail"><strong>Duration:</strong> 5-7 mins</div>
-                            <div class="speech-detail"><strong>Evaluator:</strong> Vebhav Bhandari</div>
-                        </div>
-                    </div>
-
-                    <div class="speech-card">
-                        <div class="speech-title">Prepared Speaker 3 – Priyank Tiwari</div>
-                        <div class="speech-subtitle">"TBD"</div>
-                        <div class="speech-details">
-                            <div class="speech-detail"><strong>Pathway:</strong> Innovative planning</div>
-                            <div class="speech-detail"><strong>Level/Project:</strong> Level 2 - Project 2</div>
-                            <div class="speech-detail"><strong>Project:</strong> Connect with Your Audience</div>
-                            <div class="speech-detail"><strong>Duration:</strong> 5-7 mins</div>
-                            <div class="speech-detail"><strong>Evaluator:</strong> Shalu Raizada Bhattacharya</div>
-                        </div>
-                    </div>
-
-                    <div class="speech-card">
-                        <div class="speech-title">Prepared Speaker 4 – Kaustav S</div>
-                        <div class="speech-subtitle">"THE MAN AND THE HORSE"</div>
-                        <div class="speech-details">
-                            <div class="speech-detail"><strong>Pathway:</strong> Presentation Mastery</div>
-                            <div class="speech-detail"><strong>Level/Project:</strong> Level 2 - Project 3</div>
-                            <div class="speech-detail"><strong>Project:</strong> Introduction to Toastmasters Mentoring</div>
-                            <div class="speech-detail"><strong>Duration:</strong> 5-7 mins</div>
-                            <div class="speech-detail"><strong>Evaluator:</strong> Manish Dembla</div>
+                            <div class="speech-detail"><strong>Evaluator:</strong> Pulkit Gupta</div>
                         </div>
                     </div>
                 </div>
@@ -678,12 +771,12 @@
                         <span class="agenda-title-icon">🎤</span>
                         TMOD - Theme Completion & Summary
                     </div>
-                    <div class="agenda-time">6:04 PM - 6:09 PM (5 mins)</div>
+                    <div class="agenda-time">6:10 PM - 6:15 PM (5 mins)</div>
                 </div>
                 <div class="agenda-body">
                     <div class="role-assignment">
                         <span class="role-name">TMOD</span>
-                        <span class="person-name">Nayanshi Khurana</span>
+                        <span class="person-name">DTM Ankur Yadav</span>
                     </div>
                     <p class="description">TMOD summarizes the theme and transitions to Table Topics session.</p>
                 </div>
@@ -696,12 +789,12 @@
                         <span class="agenda-title-icon">💬</span>
                         Table Topics Session
                     </div>
-                    <div class="agenda-time">6:09 PM - 6:19 PM (10 mins)</div>
+                    <div class="agenda-time">6:15 PM - 6:45 PM (30 mins)</div>
                 </div>
                 <div class="agenda-body">
                     <div class="role-assignment">
                         <span class="role-name">Table Topics Master</span>
-                        <span class="person-name">Harcharan Sethi</span>
+                        <span class="person-name">Prateek Gupta</span>
                     </div>
                     <p class="description" style="font-style: italic;">Participants will be chosen on the spot</p>
                 </div>
@@ -714,7 +807,7 @@
                         <span class="agenda-title-icon">☕</span>
                         Break
                     </div>
-                    <div class="agenda-time">6:19 PM - 6:24 PM (5 mins)</div>
+                    <div class="agenda-time">6:45 PM - 7:05 PM (20 mins)</div>
                 </div>
                 <div class="agenda-body">
                     <p class="description">Refreshment break and informal networking.</p>
@@ -728,40 +821,26 @@
                         <span class="agenda-title-icon">📋</span>
                         Evaluation Session
                     </div>
-                    <div class="agenda-time">6:24 PM - 6:42 PM (18 mins)</div>
+                    <div class="agenda-time">7:05 PM - 7:22 PM (17 mins)</div>
                 </div>
                 <div class="agenda-body">
                     <div class="role-assignment">
                         <span class="role-name">General Evaluator</span>
-                        <span class="person-name">Vebhav Bhandari</span>
+                        <span class="person-name">DTM Abhijit Roy</span>
                     </div>
 
                     <div class="evaluator-list" style="margin-top: 20px;">
                         <div class="evaluator-item">
-                            <span class="evaluator-role">Evaluator 1 (Rohan Malik)</span>
+                            <span class="evaluator-role">Evaluator 1 (Priyanka Mishra)</span>
                             <div>
-                                <span class="evaluator-name">Manish Dembla</span>
+                                <span class="evaluator-name">Arjunnath Das</span>
                                 <span class="time-badge">3 mins</span>
                             </div>
                         </div>
                         <div class="evaluator-item">
-                            <span class="evaluator-role">Evaluator 2 (Shalu Raizada Bhattacharya)</span>
+                            <span class="evaluator-role">Evaluator 2 (DTM Rupinder Singh)</span>
                             <div>
-                                <span class="evaluator-name">Vebhav Bhandari</span>
-                                <span class="time-badge">3 mins</span>
-                            </div>
-                        </div>
-                        <div class="evaluator-item">
-                            <span class="evaluator-role">Evaluator 3 (Priyank Tiwari)</span>
-                            <div>
-                                <span class="evaluator-name">Shalu Raizada Bhattacharya</span>
-                                <span class="time-badge">3 mins</span>
-                            </div>
-                        </div>
-                        <div class="evaluator-item">
-                            <span class="evaluator-role">Evaluator 4 (Kaustav S)</span>
-                            <div>
-                                <span class="evaluator-name">Manish Dembla</span>
+                                <span class="evaluator-name">Pulkit Gupta</span>
                                 <span class="time-badge">3 mins</span>
                             </div>
                         </div>
@@ -772,22 +851,22 @@
                         <div class="evaluator-item">
                             <span class="evaluator-role">Timer</span>
                             <div>
-                                <span class="evaluator-name">Bhaskar Das</span>
+                                <span class="evaluator-name">Chetan Surana</span>
                                 <span class="time-badge">2 mins</span>
                             </div>
                         </div>
                         <div class="evaluator-item">
                             <span class="evaluator-role">Ah Counter</span>
                             <div>
-                                <span class="evaluator-name">Jay Lakhani</span>
+                                <span class="evaluator-name">Shalu R. Bhattacharya</span>
                                 <span class="time-badge">2 mins</span>
                             </div>
                         </div>
                         <div class="evaluator-item">
                             <span class="evaluator-role">Grammarian</span>
                             <div>
-                                <span class="evaluator-name">Shiv Garg</span>
-                                <span class="time-badge">2 mins</span>
+                                <span class="evaluator-name">Mansi Gupta</span>
+                                <span class="time-badge">4 mins</span>
                             </div>
                         </div>
                     </div>
@@ -801,48 +880,66 @@
                         <span class="agenda-title-icon">📋</span>
                         General Evaluator's Report
                     </div>
-                    <div class="agenda-time">6:42 PM - 6:50 PM (8 mins)</div>
+                    <div class="agenda-time">7:22 PM - 7:32 PM (10 mins)</div>
                 </div>
                 <div class="agenda-body">
                     <div class="role-assignment">
                         <span class="role-name">General Evaluator</span>
                         <div>
-                            <span class="person-name">Vebhav Bhandari</span>
-                            <span class="time-badge">8 mins</span>
+                            <span class="person-name">DTM Abhijit Roy</span>
+                            <span class="time-badge">10 mins</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Awards & Closing -->
-            <div class="agenda-item red-border">
+            <!-- Keynote Speech 2 -->
+            <div class="agenda-item blue-border">
+                <div class="agenda-header">
+                    <div class="agenda-title">
+                        <span class="agenda-title-icon">🎙️</span>
+                        Keynote Speech
+                    </div>
+                    <div class="agenda-time">7:32 PM - 7:37 PM (5 mins)</div>
+                </div>
+                <div class="agenda-body">
+                    <div class="role-assignment">
+                        <span class="role-name">Keynote Speaker</span>
+                        <span class="person-name">DTM Vinay Jain</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guest Feedback, Awards, Announcements, Vote of Thanks and Closing -->
+            <div class="agenda-item blue-border">
                 <div class="agenda-header">
                     <div class="agenda-title">
                         <span class="agenda-title-icon">🏆</span>
-                        Awards & Closing
+                        Guest Feedback, Awards, Announcements, Vote of Thanks and Closing
                     </div>
-                    <div class="agenda-time">6:50 PM - 7:00 PM (10 mins)</div>
+                    <div class="agenda-time">7:37 PM - 8:00 PM (23 mins)</div>
                 </div>
                 <div class="agenda-body">
                     <div class="role-assignment">
                         <span class="role-name">Presiding Officer</span>
-                        <div>
-                            <span class="person-name">Manish Dembla</span>
-                            <span class="time-badge">10 mins</span>
-                        </div>
+                        <span class="person-name">DTM Manish Dembla</span>
                     </div>
-                    <p class="description">General Evaluator hands over to Presiding Officer for closing remarks and awards presentation.</p>
+                    <div class="role-assignment">
+                        <span class="role-name">VP Education</span>
+                        <span class="person-name">Shalu R. Bhattacharya</span>
+                    </div>
+                    <p class="description">Guest feedback, awards presentation, announcements, vote of thanks and closing remarks.</p>
                 </div>
             </div>
 
             <!-- Networking Session -->
-            <div class="agenda-item blue-border">
+            <div class="agenda-item red-border">
                 <div class="agenda-header">
                     <div class="agenda-title">
                         <span class="agenda-title-icon">🤝</span>
                         Networking Session
                     </div>
-                    <div class="agenda-time">7:00 PM onwards</div>
+                    <div class="agenda-time">8:00 PM onwards</div>
                 </div>
                 <div class="agenda-body">
                     <p class="description">Post-meeting networking and fellowship with fellow Toastmasters.</p>
@@ -852,7 +949,7 @@
 
         <!-- Total Duration -->
         <div class="total-duration">
-            Total Duration: 2 hours 15 minutes
+            Total Duration: 3 hours 15 minutes
         </div>
 
         <!-- Footer -->
